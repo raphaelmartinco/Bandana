@@ -1,0 +1,41 @@
+<html>
+  
+<header>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <style>
+      .footer {
+        font-size:10px;
+        font-family:'Playfair Display', serif ;
+        color: dimgray;
+        text-align: center;
+        margin-left: 0% ;
+      }
+      body {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black; 
+      }
+    </style>
+</header>
+
+<body style="background-color: #ffffffec"> 
+        <a style="text-decoration: none; color:black; font-weight: bold; letter-spacing: 2px; " href ='/'> <img src="https://i.ibb.co/bWW7b8G/bandanalogo3d.png" alt="bandanalogo3d" width="60px" border="0"> Bandana </a> |
+
+        <a style="text-decoration: none; color:black; font-weight: bold; " href='/aboutus'> About Us </a> |
+
+        {% if session["user"] is defined %}
+        Welcome, {{ session["user"]["first_name"] }}.
+       <a style="text-decoration: none; color:black; font-weight: bold; " href='/chat'>| Chat </a> |
+
+       <a style="text-decoration: none; color:black; font-weight: bold; " href='/collaborate1'> Collaborate </a> | 
+
+        <a style="text-decoration: none; color:black; font-weight: bold; " href='/logout'>Logout</a>
+
+        {% else %}
+        <a style="text-decoration: none; color:black; font-weight: bold; " href='/login'>Login</a>
+
+        {% endif %}
+        <p/>
+     
+    <p/>

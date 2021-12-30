@@ -1,0 +1,64 @@
+{% include "header.html" %}
+<style>
+  .background-box {
+          position: relative;
+          display: grid;
+          grid-template-columns: 1fr;
+              }
+
+  .background {
+          height: 500px;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+              }
+
+  .main-header {
+          width: 100%;
+          font-weight: 300;
+          font-size: 60px;
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 15%;
+                }
+
+  .subtitle   {
+          width: 100%;
+          font-weight: 100;
+          font-size: 30px;
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 30%;
+                }
+
+</style>
+
+
+
+<div class="background-box">
+  <div class="background" style="background-image: url(https://i.ibb.co/FVBnPGz/background.jpg"></div>
+
+  <div class="main-header"> <h1>Login</h1></div>
+  <div class="subtitle"> 
+
+    <form action="/auth" method="POST">
+  <div>
+     Username or email address
+  </div>
+  <input type="text" name="username"></input>
+   <div>
+     Password
+   </div>
+  <input type="password" name="password"></input>
+  <br></br>
+   <div>
+  <input type="submit" value="Login"/>
+   </div>
+    </form>
+</div>
+</div> 
+
+{% include "footer.html" %}

@@ -1,0 +1,86 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        /* Chat containers */
+    .container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        }
+
+        /* Darker chat container */
+    .darker {
+        border-color: #ccc;
+        background-color: #ddd;
+        }
+
+        /* Clear floats */
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        /* Style images */
+    .container img {
+        float: left;
+        max-width: 50px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 50%;
+        }
+
+        /* Style the right image */
+    .container img.right {
+        float: right;
+        margin-left: 20px;
+        margin-right:0;
+        }
+
+        /* Style time text */
+    .time-right {
+        float: right;
+        color: #aaa;
+        }
+
+        /* Style time text */
+    .time-left {
+        float: left;
+        color: #999;
+        }
+
+</style>
+
+
+  <div class="container darker">
+    <img src="https://i.ibb.co/LkVWhFd/Safe.jpg" height="50px" alt="Avatar" class="right">
+    <right><p>Hello! When can we collaborate?</p></right>
+    <span class="time-left">11:01</span>
+  </div>
+
+  <div class="container">
+    <img src="https://i.ibb.co/DgV5qWY/p2.png" height="50px" alt="Avatar">
+    <left><p>Hey! I'm free today at 5pm</p></left>
+    <span class="time-right">11:02</span>
+  </div>
+  
+  <div class="container darker">
+    <img src="https://i.ibb.co/LkVWhFd/Safe.jpg" height="50px" alt="Avatar" class="right">
+    <right><p>Sweet! would you want to talk later at 7?</p></right>
+    <span class="time-left">11:05</span>
+  </div>
+
+<div class="container">
+    <img src="https://i.ibb.co/DgV5qWY/p2.png" height="50px" alt="Avatar">
+    <left><p>sure, Look foward to doing this with you!</p></left>
+    <span class="time-right">11:00</span>
+  </div>
+  
+  {% include "footer.html" %}
+  

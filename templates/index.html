@@ -1,0 +1,154 @@
+{% include "header.html" %}
+ 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <style>
+        .background-box {
+                        position: relative;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        }
+
+        .background {
+                height: 500px;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                }
+
+        .main-header {
+                width: 100%;
+                font-weight: 300;
+                font-size: 60px;
+                text-align: center;
+                color: white;
+                position: absolute;
+                top: 15%;
+                }
+
+        .subtitle {
+                width: 100%;
+                font-weight: 100;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+                position: absolute;
+                top: 30%;
+                }
+
+        .background-box .button a {
+                position: absolute;
+                top: 40%;
+                right: 30%;
+                left: 30%;
+                display: inline-block;
+                padding: 10px 30px;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                font-size: 25px;
+                text-align: center;
+                font-weight: 700;
+                letter-spacing: 2px;
+                border-radius: 50px;
+                border: 3px solid white;
+                }
+
+        .first-header {
+                width: 100%;
+                text-align: center;
+                font-size: 65px;
+                margin-top: 30px;
+                }
+
+        .two-column-list {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                }
+
+        .two-column-list .first-left {
+                margin-right: 20px;
+                }
+
+        .first-left {
+                margin: 150px;
+                font-size: 30px;
+                }
+
+        .first-left-link {
+                position: relative;
+                top: 25px;
+                }
+
+        .first-left-link a {
+                text-decoration: none;
+                color: steelblue;
+                font-size: 20px;
+                font-weight: 500;
+                }
+
+        .first-image-wrapper img {
+                height: 400px;
+                position: relative;
+                top: 50px;
+                left: 170px;
+                }
+
+        .second-header{
+                width: 100%;
+                text-align: center;
+                font-size: 65px;
+                margin-top: 40px;
+                background-color: #f6c6ca;
+                color: black;
+                }
+        .productlist{
+                width: 100%;
+                left: 10%;
+                right: 10%;
+                background-color: #f6c6ca ;
+        }
+
+
+   </style>
+
+        <meta charset="utf-8">
+<title> Homepage </title>
+<meta name="viewport" content="width=device-winth,initial-scale=1.0">
+
+</head>
+
+<body>
+   <div class="background-box">
+      <div class="background" style="background-image: url(https://i.ibb.co/FVBnPGz/background.jpg"></div>
+      <div class="main-header">Tying Music Together</div>
+      <br></br>
+      <div class="subtitle">by linking those far and between.</div>
+      <br></br>
+      <div class="button"><a href="/login">Login here</a></div>
+   </div> 
+            
+   <div class="first-section">
+      <div class="first-header">What we are all about.</div>
+      <div class="two-column-list">
+         <div class="first-left">Match with other artists and create music that you can call your own. Collaborate with them based on your tastes and preferences. Start swiping to begin your musical journey!
+            <div class="first-left-link"><a href="/aboutus"> More About Us</a></div>
+         </div>
+         <div class="first-right">
+            <div class="first-image-wrapper"><img src="https://i.ibb.co/bWW7b8G/bandanalogo3d.png"></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="second-section">
+      <div class="second-header">Our Products</div>
+      <div class="productlist"> <img width="100%" src="https://i.ibb.co/YRqbfPL/pricelist.png" alt="pricelist" border="0"> </div>
+   </div>
+</body>
+
+</html>
+
+{% include "footer.html" %}

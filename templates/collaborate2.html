@@ -1,0 +1,111 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title> Collaborations</title>
+<meta name="viewport" content="width=device-winth,initial-scale=1.0">
+
+<style>
+   *{
+        margin: 0 ; padding: 0 ; box-sizing: 0 ; border-box;
+        }
+
+   #container{
+        min-height: 100vh;
+        display: flex;
+        }
+
+   .left {
+        width: 32vw;
+        background-color:rgb(255, 255, 255);
+        border-radius: 25px;
+        border: 2px solid #87F7F2;
+        background-color: #F7B7BC;
+        padding: 20px;
+        width: 31%;
+        height: 700px;     
+        }
+
+   .right{
+        width: 63vw;
+        text-align: justify;
+        background-color: #F7B7BC;
+        border-radius: 25px;
+        border: 2px solid #87F7F2;
+        padding: 20px;
+        width: 62%;
+        height: 700px;
+        }
+
+   .button{
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid #87F7F2;
+        padding-top: 18%;
+        padding-left: 1%;
+        padding-right: 1%;
+        background-color: #F7B7BC;
+        height: 700px;
+        }
+
+   .button:hover {
+        background-color: #fb9ea5;
+        color: black;
+        }
+
+   .next {
+        background-color: #F7B7BC;
+        }
+
+   .round {
+        border-radius: 50%;
+        }
+</style>
+
+</head>
+<body>
+   <div id = "container">
+      <div class="borderpic"></div>
+         <div class="left">
+           <p><img src="https://i.ibb.co/DgV5qWY/p2.png" alt="p2" border="0" width="80%"></p>
+           <p style = "margin-left: 30px"><b>About Me</b></p>
+           <h2 style = "margin-left: 30px">Miguel Austriaco</h2>
+           <p style = "margin-left: 30px">Male (He/him)</p>
+
+           <br>
+
+           <p style = "margin-left: 30px">Looking for someone to have fun with, Music Lover</p>
+
+         </div>
+       
+         <div class="right">
+           <p style="font-size: 20px"> <b>Age</b> 19 years Old <b style="margin-left: 20px; font-family: 'Playfair Display', serif">Location: </b> Quezon City </p>
+
+           <p>
+              <img src="https://i.ibb.co/7QdZQpg/keys.png" alt="keys" width="20%" border="0">
+              <img src="https://i.ibb.co/JK1jGVD/rock.png" alt="rock" width="20%" border="0">
+           </p>
+
+           <br>
+
+           <center><p style="font-size: 20px; font-family: 'Playfair Display', serif"><b>View their Spotify Playlist</b></p></center>
+              <iframe src="https://open.spotify.com/embed/playlist/0s1PocS56ZHZ5cZ6qxnofH?utm_source=generator" width="95%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+           <br>
+           </br>
+
+           <center><a href='/chat'> <img src="https://i.ibb.co/MMqM4w1/button.png" alt="button" border="0"> </a></center>
+
+        </div>
+
+        <div class="button"><a href="/collaborate1" class="next">Next &raquo;</a></div>
+ 
+   </div>
+
+</body>
+</html>
+
+{% include "footer.html" %}

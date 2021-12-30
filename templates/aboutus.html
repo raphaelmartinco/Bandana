@@ -1,0 +1,52 @@
+{% include "header.html" %}
+<style>
+    .background-box {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+                }
+
+    .background {
+            height: 1024px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+                }
+
+    .main-header {
+            width: 100%;
+            font-weight: 300;
+            font-size: 100px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 5%;
+                }
+
+    .subtitle {
+            width: 100%;
+            font-weight: 100;
+            font-size: 20px;
+            text-align: justify;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 30%;
+            padding: 20px 20px;
+                }
+
+</style>
+
+<div class="background-box">
+    <div class="background" style="background-image: url(https://i.ibb.co/FVBnPGz/background.jpg"></div>
+
+    <div class="main-header"> About Us 
+        <p><img style="opacity: 0.7" src="https://i.ibb.co/bWW7b8G/bandanalogo3d.png" alt="bandanalogo3d" width=" 40%"> </p>
+    </div>
+
+    <div class="subtitle"> 
+        
+        Started in 2021 in the Philippines, Bandana hopes to bring musicians together based on talents and your own personal preference. We have a passion for music, and our goal is to allow artists to make songs that they can call their own and have collaborations with like-minded individuals. </div>
+</div> 
+
+{% include "footer.html" %}
